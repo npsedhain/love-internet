@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/efc3dcb063.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      nav {
+        background: linear-gradient(
+          180deg,
+          rgba(165, 124, 155, 0.79) 0%,
+          rgba(111, 170, 189, 0.79) 100%
+        );
+        position: relative;
+        padding-top: 14px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        width: 100%;
+        justify-content: center;
+        justify-content: flex-start;
+      }
+      nav ul {
+        display: inline-block;
+        padding-left: 20px;
+        display: flex;
+        width: 100%;
+        list-style: none;
+        justify-content: flex-end;
+      }
+      nav li {
+        display: inline-block;
+        position: relative;
+      }
+      nav a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        padding-right: 40px;
+      }
+      nav a::before {
+        content: "";
+        display: block;
+        height: 4px;
+        background-color: #bfbfbf;
+
+        position: absolute;
+        top: -50%;
+        width: 0%;
+        transition: all ease-in-out 175ms;
+      }
+      nav a:hover::before {
+        width: 55%;
+      }
+      .class {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+    <link href="css/edit.css" rel="stylesheet" type="text/css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="episodes.html">Episodes</a></li>
+          <li><a href="episodes.html">About</a></li>
+          <li><a href="episodes.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex mt-12">
+      <div class="w-1/2 flex flex-col items pl-12 ml-48">
+        <img src="project1.png" width="500" />
+        <p class="text-2xl pt-16 pl-16 font-bold pb-6">Find Us</p>
+        <div>
+          <a href="https://www.youtube.com/">
+            <i class="fab fa-youtube text-red-600 text-4xl mr-4 ml-2"></i>
+          </a>
+          <a href="https://www.spotify.com/us/">
+            <i class="fab fa-spotify text-green-500 text-4xl mr-4 ml-2"></i>
+          </a>
+          <a href="https://soundcloud.com/">
+            <i class="fab fa-soundcloud text-orange-500 text-4xl mr-4 ml-2"></i>
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/RSS#:~:text=RSS%20(RDF%20Site%20Summary%20or,in%20a%20single%20news%20aggregator."
+          >
+            <i class="fas fa-rss text-yellow-500 text-4xl mr-4 ml-2"></i>
+          </a>
+        </div>
+      </div>
+      <div class="w-1/2 pl-12">
+        <div class="container mx-auto">
+          <p class="font-semibold pl-16 pt-32">
+            We talk about things we think are interesting.
+          </p>
+          <p class="font-semibold pl-4 pt-8">
+            We try and get to the bottom of anything we get our hands on.
+          </p>
+          <p class="font-semibold pl-24 pt-8">
+            Join us on our journey of knowing
+          </p>
+          <p class="font-bold pl-40 pt-4">
+            how things work
+          </p>
+        </div>
+        <div>
+          <p class="font-serif font-semibold pt-64 pr-56 text-right">
+            BY
+          </p>
+          <p class="font-mono font-semibold pr-48 pt-2 text-right">
+            Barun Pandey
+          </p>
+          <p class="font-serif font-semibold pr-56 pt-2 text-right">&</p>
+          <p class="font-mono font-semibold pr-48 pt-2 text-right">
+            Anup Sedhain
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="class">
+      Put together by Aayush Adhikari
+    </p>
+  </body>
+</html>

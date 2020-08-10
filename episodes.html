@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      nav {
+        background: linear-gradient(
+          180deg,
+          rgba(165, 124, 155, 0.79) 0%,
+          rgba(111, 170, 189, 0.79) 100%
+        );
+        position: relative;
+        padding-top: 14px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        width: 100%;
+        justify-content: center;
+        justify-content: flex-start;
+      }
+      nav ul {
+        display: inline-block;
+        padding-left: 20px;
+        display: flex;
+        width: 100%;
+        list-style: none;
+        justify-content: flex-end;
+      }
+      nav li {
+        display: inline-block;
+        position: relative;
+      }
+      nav a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        padding-right: 40px;
+      }
+      nav a::before {
+        content: "";
+        display: block;
+        height: 4px;
+        background-color: #bfbfbf;
+
+        position: absolute;
+        top: -50%;
+        width: 0%;
+        transition: all ease-in-out 175ms;
+      }
+      nav a:hover::before {
+        width: 55%;
+      }
+      img {
+      }
+    </style>
+    <link href="css/edit.css" rel="stylesheet" type="text/css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="episodes.html">Episodes</a></li>
+          <li><a href="episodes.html">About</a></li>
+          <li><a href="episodes.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <img class="mx-auto my-56" src="Group 1.png" />
+    </div>
+  </body>
+</html>
